@@ -280,5 +280,8 @@ proto_library(
     name = "google_rpc_status_proto",
     srcs = ["google/rpc/status.proto"],
     visibility = ["//visibility:public"],
+    deps = [
+        "@com_google_protobuf//:any_proto",
+    ],
 )
 

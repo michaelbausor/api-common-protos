@@ -275,3 +275,10 @@ proto_library(
         ":google_api_annotations_proto",
     ],
 )
+
+proto_library(
+    name = "google_rpc_status_proto",
+    srcs = ["google/rpc/status.proto"],
+    visibility = ["//visibility:public"],
+)
+

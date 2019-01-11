@@ -277,6 +277,18 @@ proto_library(
 )
 
 proto_library(
+    name = "google_longrunning_operations_proto",
+    srcs = ["google/longrunning/operations.proto"],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":google_api_annotations_proto",
+        ":google_rpc_status_proto",
+        "@com_google_protobuf//:any_proto",
+        "@com_google_protobuf//:empty_proto",
+    ],
+)
+
+proto_library(
     name = "google_rpc_status_proto",
     srcs = ["google/rpc/status.proto"],
     visibility = ["//visibility:public"],
